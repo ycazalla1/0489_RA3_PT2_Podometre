@@ -1,0 +1,24 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Fondo -->
+    <item android:id="@android:id/background">
+        <shape android:shape="oval">
+            <stroke
+                android:width="14dp"
+                android:color="@color/gray_blue"/>
+        </shape>
+    </item>
+
+    <!-- Progreso (recortable!) -->
+    <item android:id="@android:id/progress">
+        <clip android:clipOrientation="horizontal" android:gravity="left">
+            <shape android:shape="oval">
+                <stroke
+                    android:width="14dp"
+                    android:color="@color/blue"/>
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>
+

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">0489_RA3_PT2_Podometre</string>
+    <string name="pasos">Passos</string>
+    <string name="metres">Metres</string>
+    <string name="objectiu">Objectiu:</string>
+    <string name="guardarObjectiu">Guardar</string>
+    <string name="triarObjectiu">Tria el teu objectiu</string>
+    <string name="reiniciar">Reiniciar comptador</string>
+</resources>
