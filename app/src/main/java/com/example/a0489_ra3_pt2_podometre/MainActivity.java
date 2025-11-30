@@ -122,10 +122,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             float y = event.values[1];
             float z = event.values[2];
 
-            // ✔ Cálculo oficial pedido en el enunciado
             double magnitut = Math.sqrt(x*x + y*y + z*z);
 
-            // Detectar subida fuerte → pico
             if (magnitut > DETECTOR_PASOS && !pasDetectat) {
                 pasos++;
                 pasDetectat = true;
@@ -147,12 +145,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 }
             }
 
-            // Cuando baja → permite detectar un nuevo paso
             if (magnitut < PAS_REINICIAT) {
                 pasDetectat = false;
             }
-
-            //lastMagnitude = magnitut;
         }
     }
 
